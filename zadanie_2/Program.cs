@@ -5,10 +5,10 @@ Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int result = number % 10;
 
-if (number >= 100)
+if (number >= 100 && number < 1000)
 {
     System.Console.WriteLine($"Number = {number}; result = {result}");
 }
 else{
-    System.Console.WriteLine($"Number = {number}; Третья цифра отсутствует");
+    System.Console.WriteLine($"Number = {number}; число не удовлетворяет условию");
 }
